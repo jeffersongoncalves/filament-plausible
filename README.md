@@ -10,7 +10,13 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-plausible/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-plausible/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-plausible.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-plausible)
 
-A lightweight Filament package that seamlessly integrates Plausible Analytics into your filament panel. Plausible.io is a privacy-friendly, open-source alternative to Google Analytics.
+A lightweight Filament package that seamlessly integrates Plausible Analytics into your Filament v4 panel. Plausible.io is a privacy-friendly, open-source alternative to Google Analytics.
+
+## Requirements
+
+- PHP 8.2 or higher
+- Laravel 11.0 or 12.0
+- Filament 4.0 or higher
 
 ## Installation
 
@@ -22,17 +28,15 @@ composer require jeffersongoncalves/filament-plausible
 
 ## Usage
 
-Publish config file.
+Once installed, the package automatically integrates Plausible Analytics into your Filament panels. The tracking script is automatically injected into the head section of your Filament admin panel.
+
+Publish the configuration file to customize your Plausible settings:
 
 ```bash
 php artisan vendor:publish --tag=plausible-config
 ```
 
-Add head template.
-
-```php
-@include('plausible::script')
-```
+Configure your Plausible domain and other settings in the published configuration file.
 
 ## Changelog
 
