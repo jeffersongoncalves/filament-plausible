@@ -15,8 +15,8 @@ A lightweight Filament package that seamlessly integrates Plausible Analytics in
 ## Requirements
 
 - PHP 8.2 or higher
-- Laravel 11.0 or 12.0
-- Filament 4.0 or higher
+- Laravel 11.0 or higher
+- Filament 5.0
 
 ## Installation
 
