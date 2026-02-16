@@ -1,13 +1,13 @@
 <div class="filament-hidden">
 
-![Filament Plausible](https://raw.githubusercontent.com/jeffersongoncalves/filament-plausible/master/art/jeffersongoncalves-filament-plausible.png)
+![Filament Plausible](https://raw.githubusercontent.com/jeffersongoncalves/filament-plausible/3.x/art/jeffersongoncalves-filament-plausible.png)
 
 </div>
 
 # Filament Plausible
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-plausible.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-plausible)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-plausible/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-plausible/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-plausible/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-plausible/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-plausible.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-plausible)
 
 A lightweight Filament package that seamlessly integrates Plausible Analytics into your Filament v4 panel. Plausible.io is a privacy-friendly, open-source alternative to Google Analytics.
