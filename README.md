@@ -1,37 +1,83 @@
 <div class="filament-hidden">
 
-![Filament Plausible](https://raw.githubusercontent.com/jeffersongoncalves/filament-plausible/master/art/jeffersongoncalves-filament-plausible.png)
+![Filament Plausible](https://raw.githubusercontent.com/jeffersongoncalves/filament-plausible/1.x/art/jeffersongoncalves-filament-plausible.png)
 
 </div>
 
 # Filament Plausible
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-plausible.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-plausible)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-plausible/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-plausible/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-plausible/fix-php-code-style-issues.yml?branch=1.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-plausible/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A1.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-plausible.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-plausible)
 
-A lightweight Filament package that seamlessly integrates Plausible Analytics into your filament panel. Plausible.io is a privacy-friendly, open-source alternative to Google Analytics.
+A Filament plugin to integrate Plausible Analytics with a settings page to manage your tracking configuration. Privacy-friendly alternative to Google Analytics.
+
+## Version Compatibility
+
+| Filament | Branch | Package |
+|----------|--------|---------|
+| 5.x | `3.x` | `^3.0` |
+| 4.x | `2.x` | `^2.0` |
+| 3.x | `1.x` | `^1.0` |
+
+## Requirements
+
+- PHP 8.2 or higher
+- Laravel 11.0 or 12.0
+- Filament 3.x
 
 ## Installation
 
-You can install the package via composer:
+Install the package via Composer:
 
 ```bash
-composer require jeffersongoncalves/filament-plausible
+composer require jeffersongoncalves/filament-plausible:"^1.0"
+```
+
+Publish and run the settings migration from `spatie/laravel-settings` (if not already done):
+
+```bash
+php artisan vendor:publish --provider="Spatie\LaravelSettings\LaravelSettingsServiceProvider" --tag="migrations"
+php artisan migrate
+```
+
+Publish and run the Plausible settings migration:
+
+```bash
+php artisan vendor:publish --tag=plausible-settings-migrations
+php artisan migrate
+```
+
+## Setup
+
+Register the plugin in your `PanelProvider`:
+
+```php
+use JeffersonGoncalves\Filament\Plausible\PlausiblePlugin;
+
+public function panel(Panel $panel): Panel
+{
+    return $panel
+        ->plugins([
+            PlausiblePlugin::make(),
+        ]);
+}
 ```
 
 ## Usage
 
-Publish config file.
+Once registered, the plugin provides:
 
-```bash
-php artisan vendor:publish --tag=plausible-config
-```
+1. **Automatic script injection** - The Plausible tracking script is automatically injected into the `<head>` of your Filament panel.
+2. **Settings page** - A settings page is added to your panel where you can configure your Plausible domain(s) and host URL directly from the admin UI.
 
-Add head template.
+### Disabling the Settings Page
+
+If you only want the automatic script injection without the settings page:
 
 ```php
-@include('plausible::script')
+PlausiblePlugin::make()
+    ->settingsPage(false),
 ```
 
 ## Changelog
@@ -48,7 +94,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Jèfferson Gonçalves](https://github.com/jeffersongoncalves)
+- [Jefferson Goncalves](https://github.com/jeffersongoncalves)
 - [All Contributors](../../contributors)
 
 ## License

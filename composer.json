@@ -1,10 +1,15 @@
 {
     "name": "jeffersongoncalves/filament-plausible",
-    "description": "A lightweight Filament package that seamlessly integrates Plausible Analytics into your filament panel. Plausible.io is a privacy-friendly, open-source alternative to Google Analytics.",
+    "description": "Filament plugin to integrate Plausible Analytics with a settings page to manage your tracking configuration. Privacy-friendly alternative to Google Analytics.",
     "keywords": [
         "jeffersongoncalves",
         "laravel",
-        "filament-plausible"
+        "filament",
+        "filament-plugin",
+        "plausible",
+        "analytics",
+        "settings",
+        "privacy"
     ],
     "homepage": "https://github.com/jeffersongoncalves/filament-plausible",
     "license": "MIT",
@@ -18,7 +23,8 @@
     "require": {
         "php": "^8.2|^8.3",
         "filament/filament": "^3.0",
-        "jeffersongoncalves/laravel-plausible": "^1.0",
+        "filament/spatie-laravel-settings-plugin": "^3.0",
+        "jeffersongoncalves/laravel-plausible": "^2.0",
         "laravel/framework": "^11.0|^12.0",
         "spatie/laravel-package-tools": "^1.14.0"
     },

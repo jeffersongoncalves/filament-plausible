@@ -12,7 +12,8 @@ class PlausibleServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('filament-plausible');
+        $package->name('filament-plausible')
+            ->hasTranslations();
     }
 
     public function packageRegistered(): void
