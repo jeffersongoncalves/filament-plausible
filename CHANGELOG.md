@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## v3.1.1 - 2026-02-22
+
+### What's Changed
+
+- Add translated navigation group to settings page (`Settings` in English, `Configurações` in Portuguese)
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-plausible/compare/v3.1.0...v3.1.1
+
 ## v3.1.0 - 2026-02-22
 
 ### Added
