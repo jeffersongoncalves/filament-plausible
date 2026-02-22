@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## v2.1.0 - 2026-02-22
+
+### Added
+
+- Settings page to manage Plausible Analytics configuration (domains, host URL) directly from the Filament panel
+- PlausiblePlugin class implementing Filament Plugin contract with `settingsPage()` toggle
+- Translation files (English and Brazilian Portuguese)
+
+### Changed
+
+- Updated `laravel-plausible` dependency to `^2.0` (spatie/laravel-settings support)
+- Added `filament/spatie-laravel-settings-plugin` `^4.0` dependency
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-plausible/compare/v2.0.0...v2.1.0
+
 ## v2.0.0 - 2025-07-17
 
 ### What's Changed
