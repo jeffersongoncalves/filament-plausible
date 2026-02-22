@@ -14,7 +14,10 @@ class ManagePlausibleSettings extends SettingsPage
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-chart-bar';
 
-    protected static string|\UnitEnum|null $navigationGroup = null;
+    public static function getNavigationGroup(): ?string
+    {
+        return __('filament-plausible::pages.navigation_group');
+    }
 
     public static function getNavigationLabel(): string
     {
