@@ -2,6 +2,7 @@
 
 return [
     'navigation_label' => 'Plausible Analytics',
+    'navigation_group' => 'Settings',
     'title' => 'Plausible Analytics Settings',
 
     'sections' => [

@@ -2,6 +2,7 @@
 
 return [
     'navigation_label' => 'Plausible Analytics',
+    'navigation_group' => 'Configurações',
     'title' => 'Configurações do Plausible Analytics',
 
     'sections' => [
