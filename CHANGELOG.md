@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.1 - 2026-02-24
+
+### What's Changed
+
+- Add Laravel 13.x support
+
 ## v3.1.1 - 2026-02-22
 
 ### What's Changed
