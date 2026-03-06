@@ -9,6 +9,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-plausible.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-plausible)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-plausible/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-plausible/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-plausible.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-plausible)
+[![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-plausible.svg?style=flat-square)](LICENSE.md)
 
 A Filament plugin to integrate Plausible Analytics with a settings page to manage your tracking configuration. Privacy-friendly alternative to Google Analytics.
 
@@ -27,6 +28,8 @@ A Filament plugin to integrate Plausible Analytics with a settings page to manag
 - Filament 5.x
 
 ## Installation
+
+You can install the package via composer:
 
 Install the package via Composer:
 
