@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Plausible](https://raw.githubusercontent.com/jeffersongoncalves/filament-plausible/2.x/art/jeffersongoncalves-filament-plausible.jpg)
+![Filament Plausible](https://raw.githubusercontent.com/jeffersongoncalves/filament-plausible/2.x/art/jeffersongoncalves-filament-plausible.png)
 
 </div>
 
