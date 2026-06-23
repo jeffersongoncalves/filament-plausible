@@ -2,22 +2,20 @@
 
 namespace JeffersonGoncalves\Filament\Plausible;
 
-use Filament\Support\Facades\FilamentView;
 use Filament\View\PanelsRenderHook;
-use Illuminate\Contracts\View\View;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use JeffersonGoncalves\FilamentAnalyticsCore\AbstractAnalyticsServiceProvider;
 
-class PlausibleServiceProvider extends PackageServiceProvider
+class PlausibleServiceProvider extends AbstractAnalyticsServiceProvider
 {
-    public function configurePackage(Package $package): void
+    protected function packageName(): string
     {
-        $package->name('filament-plausible')
-            ->hasTranslations();
+        return 'filament-plausible';
     }
 
-    public function packageRegistered(): void
+    protected function renderHooks(): array
     {
-        FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('plausible::script'));
+        return [
+            PanelsRenderHook::HEAD_START => 'plausible::script',
+        ];
     }
 }
