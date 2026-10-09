@@ -6,6 +6,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Pages\SettingsPage;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
+use JeffersonGoncalves\FilamentAnalyticsCore\AbstractAnalyticsPlugin;
 use JeffersonGoncalves\Plausible\Settings\PlausibleSettings;
 
 class ManagePlausibleSettings extends SettingsPage
@@ -16,7 +17,7 @@ class ManagePlausibleSettings extends SettingsPage
 
     public static function getNavigationGroup(): ?string
     {
-        return __('filament-plausible::pages.navigation_group');
+        return AbstractAnalyticsPlugin::navigationGroupFor('filament-plausible') ?? __('filament-plausible::pages.navigation_group');
     }
 
     public static function getNavigationLabel(): string
