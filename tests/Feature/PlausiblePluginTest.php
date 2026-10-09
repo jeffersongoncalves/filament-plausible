@@ -4,9 +4,9 @@ use Filament\Facades\Filament;
 use Filament\Support\Facades\FilamentView;
 use Filament\View\PanelsRenderHook;
 use Illuminate\Foundation\Auth\User;
-use JeffersonGoncalves\Plausible\Settings\PlausibleSettings;
-use JeffersonGoncalves\Filament\Plausible\PlausiblePlugin;
 use JeffersonGoncalves\Filament\Plausible\Pages\ManagePlausibleSettings;
+use JeffersonGoncalves\Filament\Plausible\PlausiblePlugin;
+use JeffersonGoncalves\Plausible\Settings\PlausibleSettings;
 use Livewire\Livewire;
 
 beforeEach(function () {
