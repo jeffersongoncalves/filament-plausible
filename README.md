@@ -23,6 +23,15 @@ A Filament plugin to integrate Plausible Analytics with a settings page to manag
 | 4.x | `2.x` | `^2.0` |
 | 3.x | `1.x` | `^1.0` |
 
+### Navigation group
+
+Put the settings page in one of your panel's own navigation groups (a string or a closure):
+
+```php
+PlausiblePlugin::make()
+    ->navigationGroup(fn (): string => __('admin.navigation.settings')),
+```
+
 ## Requirements
 
 - PHP 8.2 or higher
