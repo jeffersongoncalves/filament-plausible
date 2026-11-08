@@ -26,12 +26,13 @@ it('ships translated labels', function () {
 
 it('saves the settings from the page', function () {
     Livewire::test(ManagePlausibleSettings::class)
-        ->fillForm(['domains' => 'example.com'])
+        ->fillForm(['domains' => 'example.com', 'script_id' => 'pa-abc123'])
         ->call('save')
         ->assertHasNoFormErrors();
 
     $settings = app(PlausibleSettings::class)->refresh();
-    expect($settings->domains)->toBe('example.com');
+    expect($settings->domains)->toBe('example.com')
+        ->and($settings->script_id)->toBe('pa-abc123');
 });
 
 it('injects the script into the panel once configured', function () {

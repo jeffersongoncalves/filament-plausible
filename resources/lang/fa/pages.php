@@ -15,6 +15,10 @@ return [
             'label' => 'دامنه(ها)',
             'helper' => 'دامنه(هایی) که باید ردیابی شوند. برای گزارش تجمیعی از مقادیر جداشده با کاما استفاده کنید (مثلاً one.com,two.com).',
         ],
+        'script_id' => [
+            'label' => 'شناسه اسکریپت',
+            'helper' => 'شناسه اسکریپت سایت از قطعه کد فعلی Plausible (pa-XXXX، در Site Installation). بر دامنه‌ها اولویت دارد.',
+        ],
         'host_analytics' => [
             'label' => 'میزبان Plausible',
             'helper' => 'آدرس میزبان Plausible Analytics. برای نسخه ابری از https://plausible.io یا آدرس میزبانی شخصی خود استفاده کنید.',

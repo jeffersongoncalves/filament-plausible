@@ -23,7 +23,7 @@
     "require": {
         "php": "^8.2|^8.3",
         "jeffersongoncalves/filament-analytics-core": "^1.1",
-        "jeffersongoncalves/laravel-plausible": "^3.0"
+        "jeffersongoncalves/laravel-plausible": "^3.2"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",

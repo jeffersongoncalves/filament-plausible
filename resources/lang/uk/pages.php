@@ -15,6 +15,10 @@ return [
             'label' => 'Домен(и)',
             'helper' => 'Домен(и) для відстеження. Використовуйте значення через кому для зведених звітів (наприклад, one.com,two.com).',
         ],
+        'script_id' => [
+            'label' => 'ID скрипту',
+            'helper' => 'ID скрипту сайту з поточного сніпета Plausible (pa-XXXX, у Site Installation). Має пріоритет над доменами.',
+        ],
         'host_analytics' => [
             'label' => 'Хост Plausible',
             'helper' => 'URL хоста Plausible Analytics. Використовуйте https://plausible.io для хмари або URL власного сервера.',

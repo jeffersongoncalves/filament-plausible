@@ -15,6 +15,10 @@ return [
             'label' => 'डोमेन',
             'helper' => 'ट्रैक करने के लिए डोमेन। संयुक्त रिपोर्टिंग के लिए कॉमा से अलग मान उपयोग करें (जैसे one.com,two.com)।',
         ],
+        'script_id' => [
+            'label' => 'स्क्रिप्ट आईडी',
+            'helper' => 'Plausible के मौजूदा स्निपेट से साइट की स्क्रिप्ट आईडी (pa-XXXX, Site Installation में)। डोमेन पर प्राथमिकता रखती है।',
+        ],
         'host_analytics' => [
             'label' => 'Plausible होस्ट',
             'helper' => 'Plausible Analytics होस्ट URL। क्लाउड के लिए https://plausible.io या अपना सेल्फ-होस्टेड URL उपयोग करें।',

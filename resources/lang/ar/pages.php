@@ -15,6 +15,10 @@ return [
             'label' => 'النطاق (النطاقات)',
             'helper' => 'النطاق أو النطاقات المراد تتبعها. استخدم قيمًا مفصولة بفواصل للتقارير المجمّعة (مثل one.com,two.com).',
         ],
+        'script_id' => [
+            'label' => 'معرّف السكربت',
+            'helper' => 'معرّف سكربت الموقع من مقتطف Plausible الحالي (pa-XXXX، ضمن Site Installation). له الأولوية على النطاقات.',
+        ],
         'host_analytics' => [
             'label' => 'مضيف Plausible',
             'helper' => 'رابط مضيف Plausible Analytics. استخدم https://plausible.io للنسخة السحابية أو رابط الاستضافة الذاتية الخاص بك.',

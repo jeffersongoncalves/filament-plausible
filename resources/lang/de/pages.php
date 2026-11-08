@@ -15,6 +15,10 @@ return [
             'label' => 'Domain(s)',
             'helper' => 'Die zu erfassende(n) Domain(s). Verwenden Sie kommagetrennte Werte für zusammengefasste Berichte (z. B. one.com,two.com).',
         ],
+        'script_id' => [
+            'label' => 'Skript-ID',
+            'helper' => 'Skript-ID der Website aus dem aktuellen Plausible-Snippet (pa-XXXX, unter Site Installation). Hat Vorrang vor Domain(s).',
+        ],
         'host_analytics' => [
             'label' => 'Plausible-Host',
             'helper' => 'Die Host-URL von Plausible Analytics. Verwenden Sie https://plausible.io für die Cloud oder Ihre selbst gehostete URL.',
