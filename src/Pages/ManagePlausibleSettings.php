@@ -44,6 +44,12 @@ class ManagePlausibleSettings extends SettingsPage
                             ->placeholder('example.com')
                             ->nullable(),
 
+                        TextInput::make('script_id')
+                            ->label(__('filament-plausible::pages.fields.script_id.label'))
+                            ->helperText(__('filament-plausible::pages.fields.script_id.helper'))
+                            ->placeholder('pa-XXXXXXXXXXXXXXXXXXXXXX')
+                            ->nullable(),
+
                         TextInput::make('host_analytics')
                             ->label(__('filament-plausible::pages.fields.host_analytics.label'))
                             ->helperText(__('filament-plausible::pages.fields.host_analytics.helper'))
