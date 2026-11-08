@@ -15,6 +15,10 @@ return [
             'label' => 'Domein(en)',
             'helper' => 'Het domein of de domeinen om te volgen. Gebruik kommagescheiden waarden voor gecombineerde rapportage (bijv. one.com,two.com).',
         ],
+        'script_id' => [
+            'label' => 'Script-ID',
+            'helper' => 'Script-ID van de site uit de huidige Plausible-snippet (pa-XXXX, onder Site Installation). Gaat voor Domein(en).',
+        ],
         'host_analytics' => [
             'label' => 'Plausible-host',
             'helper' => 'De host-URL van Plausible Analytics. Gebruik https://plausible.io voor de cloud of je eigen gehoste URL.',

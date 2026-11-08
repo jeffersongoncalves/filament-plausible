@@ -17,6 +17,10 @@ return [
             'label' => 'Domínio(s)',
             'helper' => 'O(s) domínio(s) a rastrear. Use valores separados por vírgula para relatório consolidado (ex: um.com,dois.com).',
         ],
+        'script_id' => [
+            'label' => 'ID do script',
+            'helper' => 'ID do script do site no snippet atual do Plausible (pa-XXXX, em Site Installation). Tem prioridade sobre Domínio(s).',
+        ],
         'host_analytics' => [
             'label' => 'Host do Plausible',
             'helper' => 'A URL do host do Plausible Analytics. Use https://plausible.io para cloud ou sua URL self-hosted.',
