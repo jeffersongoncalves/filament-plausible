@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.5.0 - 2026-11-08
+
+### Added
+
+- **Script ID** field on the settings page (requires `jeffersongoncalves/laravel-plausible` ^3.2): when filled (`pa-XXXX`), the panel renders Plausible's current per-site snippet instead of the legacy `data-domain` one. Translated for every shipped locale.
+
+### Upgrade
+
+Run `php artisan migrate` (laravel-plausible adds the `plausible.script_id` setting).
+
 ## v2.2.0 - 2026-11-08
 
 ### Added
